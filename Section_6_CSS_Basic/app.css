@@ -1,0 +1,45 @@
+/* selector {
+    property: value;
+} */
+
+
+/* ELEMENT SELECTOR */
+
+h1 {
+    /* there's no guarantee that any given font is available
+    having more than one font lets the browser to select an 
+    acceptable fallback font when necessary */
+    font-family: Futura, Arial, sans-serif;
+    text-align: center;
+    width: 50%;
+    font-weight: normal;
+    text-decoration: underline wavy red;
+    letter-spacing: 15px;
+    font-size: 80px;
+}
+
+a {
+    /* remove hyperlink underline */
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+}
+
+
+/* ID SELECTOR */
+
+#element_id {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+
+/* CLASS SELECTOR */
+
+.class_name {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}

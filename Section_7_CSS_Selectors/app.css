@@ -1,0 +1,143 @@
+/* * {
+    background-color: cyan;
+} */
+
+
+/* ELEMENT SELECTOR */
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,
+h2 {
+    color: #1d3557;
+}
+
+
+/* ID SELECTOR */
+
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: #457b9d;
+}
+
+
+/* CLASS SELECTOR */
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+.post a {
+    color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+/* DESCENDANT SELECTOR */
+
+
+/* any anchor tag nested anywhere in the footer */
+
+footer a {
+    color: #e63946;
+}
+
+
+/* ADJACENT SELECT */
+
+
+/* select the element that are immediately preceded by an
+previous element on the same level
+
+not children or parents are not nested in anyway.*/
+
+h2+button {
+    font-size: 20px;
+}
+
+
+/* DIRECT CHILD */
+
+
+/* any anchor tag that is directly the child directly
+descended of a footer or from a footer. */
+
+footer>a {
+    color: #457b9d;
+}
+
+
+/* ATTRIBUTE SELECTOR */
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+a[href*="google"] {
+    color: #1d3557;
+}
+
+
+/*  PSEUDO CLASSES */
+
+
+/* keyword added to a selector that specifies a special state of the selected element(s).
+For example, :hover can be used to change a button's color when the user's pointer hovers over it. */
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #dfe8dc;
+}
+
+
+/* PSEUDO ELEMENTS */
+
+
+/* keyword added to a selector that lets you style a specific part of the selected element(s).
+For example, ::first-line can be used to change the font of the first line of a paragraph. */
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: #fcbf49;
+}
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+button:hover {
+    background-color: olive;
+}
+
+button {
+    background-color: magenta !important;
+}
